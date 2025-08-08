@@ -1,0 +1,44 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+
+# Logs
+logs/
+*.log
+*.pid
+*.seed
+*.pid.lock
+
+# Runtime data
+pids/
+*.sqlite
+*.db
+
+# Coverage
+coverage/
+.nyc_output/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build
+dist/
+build/
+
+# IDEs
+.vscode/
+.idea/
+
+# local database (optional)
+*.sqlite
+*.db
+
+# Optional: Ignore uploads or public files that shouldn't be tracked
+uploads/
+public/uploads/
