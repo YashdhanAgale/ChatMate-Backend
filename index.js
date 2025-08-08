@@ -10,7 +10,13 @@ const { errorHandler } = require("./middlewares/errorHandler");
 connectDB();
 
 const app = express();
-app.use(cors());
+app.use(
+  cors({
+    origin: process.env.FRONTEND_URL,
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  })
+);
 app.use(bodyParser.json());
 
 app.use("/api", webhookRoutes);
